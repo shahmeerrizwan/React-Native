@@ -1,5 +1,6 @@
 import { View, Button } from "react-native";
 
+
 export default function ButtonComponent(props: { title: string;onPress:any }) {
   // const alert = () => {
   //   console.warn("Function Call Sucessfully");
@@ -7,7 +8,7 @@ export default function ButtonComponent(props: { title: string;onPress:any }) {
 
   return (
     <View>
-      <Button onPress={props.onPress} color={'red'} title={props.title} />
+      <Button onPress={props.onPress} color={'red'} title={props.title}  />
     </View>
   );
 }

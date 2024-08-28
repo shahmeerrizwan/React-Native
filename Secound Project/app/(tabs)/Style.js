@@ -2,10 +2,9 @@ import { StyleSheet } from "react-native"
 
 export default ExStyle = StyleSheet.create({
     Externalstyle: {
-        top: 90,
         textAlign: "center",
-        fontWeight: "700",
         fontSize: 30,
+        fontWeight: "700",
         backgroundColor: 'orange',
         padding: 10,
     }
