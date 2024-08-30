@@ -1,6 +1,60 @@
 import { StyleSheet } from "react-native"
 
-export default ExStyle = StyleSheet.create({
+export default styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 20,
+        justifyContent: 'center',
+    },
+    title: {
+        fontSize: 30,
+        textAlign: "center",
+        fontWeight: "700",
+        marginBottom: 20,
+    },
+    inlineTitle: {
+        fontSize: 30,
+        textAlign: "center",
+        fontWeight: "700",
+        marginBottom: 20,
+    },
+    addStyle: {
+        textAlign: "center",
+        fontWeight: "700",
+        fontSize: 30,
+        backgroundColor: 'yellow',
+        padding: 10,
+        marginBottom: 20,
+    },
+    inpStyle: {
+        fontSize: 18,
+        color: "black",
+        borderWidth: 2,
+        padding: 20,
+        marginBottom: 20,
+    },
+    button: {
+        backgroundColor: '#007BFF',
+        padding: 10,
+        borderRadius: 5,
+        marginBottom: 10,
+        alignItems: 'center',
+    },
+    clearButton: {
+        backgroundColor: '#FF0000',
+        padding: 10,
+        borderRadius: 5,
+        alignItems: 'center',
+    },
+    buttonText: {
+        color: 'white',
+        fontSize: 16,
+    },
+    nameText: {
+        fontSize: 20,
+        marginTop: 20,
+        marginBottom: 20,
+    },
     Externalstyle: {
         textAlign: "center",
         fontSize: 30,
@@ -8,4 +62,4 @@ export default ExStyle = StyleSheet.create({
         backgroundColor: 'orange',
         padding: 10,
     }
-})
+});
