@@ -1,6 +1,7 @@
 import { Text, View,  TextInput, TouchableOpacity } from "react-native";
 import { useState } from "react";
 import styles from "./Style";
+import Form from "../Components/Form";
 
 export default function HomeScreen() {
   const [name, setName] = useState("Signup");
@@ -31,6 +32,8 @@ export default function HomeScreen() {
       >
         <Text style={styles.buttonText}>Clear Input</Text>
       </TouchableOpacity>
+
+      <Form/>
     </View>
   );
 }

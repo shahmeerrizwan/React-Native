@@ -1,11 +1,12 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet } from "react-native";
 
 export default styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 20,
-        justifyContent: 'center',
+        justifyContent: "center",
     },
+
     title: {
         fontSize: 30,
         textAlign: "center",
@@ -22,7 +23,7 @@ export default styles = StyleSheet.create({
         textAlign: "center",
         fontWeight: "700",
         fontSize: 30,
-        backgroundColor: 'yellow',
+        backgroundColor: "yellow",
         padding: 10,
         marginBottom: 20,
     },
@@ -34,20 +35,20 @@ export default styles = StyleSheet.create({
         marginBottom: 20,
     },
     button: {
-        backgroundColor: '#007BFF',
+        backgroundColor: "#007BFF",
         padding: 10,
         borderRadius: 5,
         marginBottom: 10,
-        alignItems: 'center',
+        alignItems: "center",
     },
     clearButton: {
-        backgroundColor: '#FF0000',
+        backgroundColor: "#FF0000",
         padding: 10,
         borderRadius: 5,
-        alignItems: 'center',
+        alignItems: "center",
     },
     buttonText: {
-        color: 'white',
+        color: "white",
         fontSize: 16,
     },
     nameText: {
@@ -59,7 +60,7 @@ export default styles = StyleSheet.create({
         textAlign: "center",
         fontSize: 30,
         fontWeight: "700",
-        backgroundColor: 'orange',
+        backgroundColor: "orange",
         padding: 10,
-    }
+    },
 });
