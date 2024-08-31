@@ -63,4 +63,20 @@ export default styles = StyleSheet.create({
         backgroundColor: "orange",
         padding: 10,
     },
+    listText: {
+        textAlign: "center",
+        fontSize: 32,
+        fontWeight: 800
+    },
+    list: {
+        backgroundColor: "green",
+        color: "white",
+        borderColor: "black",
+        borderWidth: 2,
+        margin: 10,
+        padding: 10,
+        textAlign: "center",
+        fontSize: 20,
+        fontWeight: 600
+    }
 });
