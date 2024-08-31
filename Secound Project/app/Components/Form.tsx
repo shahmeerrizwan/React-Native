@@ -12,6 +12,8 @@ export default function Form() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [display, setDisplay] = useState(false);
+  const [showPassword, setShowPassword] = useState(true);
+
 
   const clearDetail = () => {
     setDisplay(false);
@@ -19,7 +21,9 @@ export default function Form() {
     setPassword("");
     setUserName("");
   };
-
+const showPass =()=>{
+setShowPassword(!showPassword)
+}
   return (
     <>
       <View>
@@ -44,7 +48,7 @@ export default function Form() {
         style={Style.input}
           placeholder="Enter Your Password"
           value={password}
-          secureTextEntry={true}
+          secureTextEntry={showPassword}
           onChangeText={(text) => {
             setPassword(text);
           }}
@@ -61,7 +65,9 @@ export default function Form() {
         <TouchableOpacity style={Style.button} onPress={clearDetail}>
           <Text style={Style.buttonText}>Clear Details</Text>
         </TouchableOpacity>
-
+        <TouchableOpacity style={Style.button} onPress={showPass}>
+          <Text style={Style.buttonText}>Show Password</Text>
+        </TouchableOpacity>
         <View>
           <Text style={Style.title}>Detailed</Text>
           {display ? (
