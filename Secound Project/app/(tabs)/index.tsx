@@ -1,4 +1,11 @@
-import { Text, View,  TextInput, TouchableOpacity,FlatList } from "react-native";
+import {
+  Text,
+  View,
+  TextInput,
+  TouchableOpacity,
+  FlatList,
+  ScrollView
+} from "react-native";
 // import { useState } from "react";
 import styles from "./Style";
 // import Form from "../Components/Form";
@@ -7,21 +14,53 @@ export default function HomeScreen() {
   // const [name, setName] = useState("Signup");
   // const [inpValue, setInpValue] = useState<string>("");
 
-const users =[
-  {
-    name:"Shahmeer",
-    age:19
-  },{
-    name:"Abdullah",
-    age:20
-  },{
-    name:"Talha",
-    age:21
-  },{
-    name:"Adnan",
-    age:22
-  },
-]
+  const users = [
+    {
+      name: "Shahmeer",
+      age: 19,
+    },
+    {
+      name: "Abdullah",
+      age: 20,
+    },
+    {
+      name: "Talha",
+      age: 21,
+    },
+    {
+      name: "Adnan",
+      age: 22,
+    },  {
+      name: "Shahmeer",
+      age: 19,
+    },
+    {
+      name: "Abdullah",
+      age: 20,
+    },
+    {
+      name: "Talha",
+      age: 21,
+    },
+    {
+      name: "Adnan",
+      age: 22,
+    },
+    {
+      name: "Abdullah",
+      age: 20,
+    },
+    {
+      name: "Talha",
+      age: 21,
+    },
+    {
+      name: "Adnan",
+      age: 22,
+    },
+  ];
+
+ 
 
   return (
     // <View style={styles.container}>
@@ -34,7 +73,7 @@ const users =[
     //   <Text style={styles.inlineTitle}>Inline Style</Text>
     //   <Text style={styles.addStyle}>Internal Style</Text>
     //   <Text style={styles.Externalstyle}>External Style</Text>
-      
+
     //   <Text style={styles.nameText}>Your Name Is: {inpValue}</Text>
     //   <TextInput
     //     style={styles.inpStyle}
@@ -52,14 +91,21 @@ const users =[
     //   <Form/>
     // </View>
 
-    <View>
-<Text style={styles.listText}>FLAT LIST </Text>
-<FlatList  data={users}  
-renderItem={({item})=>
-  <Text style={styles.list}>{item.name}</Text>
-}
-/>
-    </View>
+    // <View>
+    //   <Text style={styles.listText}>FLAT LIST </Text>
+    //   <FlatList
+    //     data={users}
+    //     renderItem={({ item }) => <Text style={styles.list}>{item.name}</Text>}
+    //   />
+    // </View>
+
+<View>
+<Text style={styles.listText}>CUSTOM LIST </Text>
+<ScrollView>
+{users.map( (item,id )=> <Text key={id} style={styles.list}>{item.name}</Text>)}
+</ScrollView>
+</View>
+
+
   );
 }
-

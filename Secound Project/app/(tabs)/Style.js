@@ -77,6 +77,6 @@ export default styles = StyleSheet.create({
         padding: 10,
         textAlign: "center",
         fontSize: 20,
-        fontWeight: 600
+        fontWeight: 600,
     }
 });
